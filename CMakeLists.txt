@@ -15,7 +15,7 @@ add_library(libReflexxesTypeII
 	src/TypeIIRML/TypeIIRMLVelocityCalculatePositionalExtrems.cpp
 	src/TypeIIRML/TypeIIRMLPolynomial.cpp
 	src/TypeIIRML/TypeIIRMLVelocity.cpp
-	src/TypeIIRML/TypeIIRMLIsPhaseSynchrnizationPossible.cpp
+	src/TypeIIRML/TypeIIRMLIsPhaseSynchronizationPossible.cpp
 	src/TypeIIRML/ReflexxesAPI.cpp
 	src/TypeIIRML/TypeIIRMLStep3.cpp
 	src/TypeIIRML/TypeIIRMLCalculatePositionalExtrems.cpp
