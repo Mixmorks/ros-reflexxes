@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(reflexxes)
+project(ros-reflexxes)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,7 +10,7 @@ find_package( ament_cmake REQUIRED )
 
 include_directories( include )
 
-add_library(libReflexxesTypeII
+add_library(libReflexxes
 	src/TypeIIRML/TypeIIRMLStep2PhaseSynchronization.cpp
 	src/TypeIIRML/TypeIIRMLVelocityCalculatePositionalExtrems.cpp
 	src/TypeIIRML/TypeIIRMLPolynomial.cpp
@@ -41,11 +41,11 @@ add_library(libReflexxesTypeII
 	src/TypeIIRML/TypeIIRMLVelocityIsPhaseSynchronizationPossible.cpp
 )
 
-install( TARGETS libReflexxesTypeII LIBRARY DESTINATION lib )
+install( TARGETS libReflexxes LIBRARY DESTINATION lib )
 install( DIRECTORY include/ DESTINATION include )
 
 ament_export_include_directories(include)
-ament_export_libraries(reflexxes)
+ament_export_libraries(libReflexxes)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
